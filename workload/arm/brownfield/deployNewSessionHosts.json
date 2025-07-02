@@ -20,6 +20,11 @@
       "metadata": {
         "description": "Resource Group name where to deploy session hosts."
       }
+     "vmLocalUserName": {
+      "type": "string",
+      "metadata": {
+        "description": "VM local username"
+      }     
     },
     "deploymentPrefix": {
       "type": "string",
@@ -213,7 +218,7 @@
     },
     "identityServiceProvider": {
       "type": "string",
-      "defaultValue": "ADDS",
+      "defaultValue": "EntraID",
       "metadata": {
         "description": "The service providing domain services for Azure Virtual Desktop."
       }
